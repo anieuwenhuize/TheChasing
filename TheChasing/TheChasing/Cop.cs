@@ -6,14 +6,16 @@ namespace TheChasing
 {
     class Cop
     {
-        public Cop()
-        {
+        private Jail Jail;
 
+        public Cop(Jail jail)
+        {
+            Jail = jail;
         }
 
-        //public Catch( ... )
-        //{
-              // put the bastard in jail!
-        //}
+        public void Catch(Thief thief)
+        {
+            this.Jail.Imprison(thief);
+        }
     }
 }

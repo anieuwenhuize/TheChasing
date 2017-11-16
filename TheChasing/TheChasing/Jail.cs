@@ -21,6 +21,7 @@ namespace TheChasing
         public void Imprison(Thief thief)
         {
             // zet de dief gevangen
+            this.prisoner = thief;
         }
 
         public override string ToString()
