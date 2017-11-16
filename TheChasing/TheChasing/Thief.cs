@@ -11,6 +11,7 @@ namespace TheChasing
         public Thief( string name )
         {
             // wijs de naam toe aan het veld
+            this.name = name;
         }
 
         public override string ToString()
